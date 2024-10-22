@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,700&display=swap');
+      </style>
+</head>
+<body>
+  <!-- Navigations  -->
+    <div class="maintop">
+        <h1 class="logo">Imran Islam</h1>
+
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="">Home</a>
+                <a href="#About">About</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contact">Contact</a>
+            </div>
+          </div>
+    </div>
+
+  <!-- Main Content -->
+    <div class="content">
+
+        <div class="describe">
+            <h1 id="typing"></h1>
+        </div>
+        <img class="heroimg" src = "portfolio-images/headshot-circle.jpg">
+    </div>
+     
+
+    <div class="message">
+        <h1> Scroll to explore</h1>
+    </div>
+    <div class="spacer">
+    </div>
+
+    <!-- About Me Section -->
+    <div id = "About" class="container" data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+        <div class="text-center">
+            <h2 class="pt-3 pb-2 text-color-normal abouth">ABOUT ME</h2>
+            <p class="py-3 aboutp">Aspiring software engineer,
+                 with experience designing and developing front-end and back-end solutions, 
+                 who is passionate about solving challenging problems and building solutions that meet the needs of customers and businesses 
+                 through collaborative communication, innovation, and efficient design.
+            </p>
+        </div>
+        <button class="mybtn leftshift" onclick="location.href='./iiresume24.pdf';" target="_blank" ><a class="mybtn-a"> Open Resume</a></button>
+    </div>
+
+    <!-- Projects Section ---------- To showcase your projects -->
+    <div id=Projects class="container mt-5 py-5 hide-overflow">
+
+        <!-- Header For Project Section -->
+        <div data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            class="text-center py-3" style="margin-top: 5rem;">
+            <h2 class="pt-3 pb-2 text-color-normal abouth">MY PROJECTS</h2>
+        </div>
+
+        <!-- Projects -->
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            class="row my-5 justify-content-center">
+            <div class="col-lg-4 col-md-5 order-1">
+                <img src="portfolio-images/rh.jpg" class="w-100 pimg" alt="Responsive image">
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-12 align-self-center py-3 pt-md-0 px-3 order-12">
+                <div class="card-block px-3">
+                    <h4 class="card-title aboutm">Relic Harbor</h4>
+                    <p class="card-text aboutp">Relic Harbor is a full scale mobile game, complete with a backend save-data storage and authentication system. This project was made using the Godot engine, with GDscript, C#, and C++.</p>
+                    <button class="mybtn" onclick="location.href='RelicHarbor.html';"><a class="mybtn-a">Visit Game Site</a> </button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+        class="row my-5 justify-content-center">
+            <div class="col-lg-6 col-md-7 col-sm-12 align-self-center py-3 pt-md-0 px-3 order-12">
+                <div class="card-block px-3">
+                    <h4 class="card-title aboutm">Coming Soon...</h4>
+                    <p class="card-text aboutp">Currently under development: A web game with a focus on puzzle and strategy, written in Rust with Bevy.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5 order-md-12 order-1">
+                <img src="portfolio-images/x01.PNG" class="w-100 pimg" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Past Work -->
+    <div id = "PastWork" class="centered-container container" data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000"
+    data-aos-easing="ease-in-out">
+        <h2 class="abouth">PAST WORK</h2>
+
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            class="centered-element">
+                <p class="aboutp"><span style="font-weight: bold;">INTERNSHIP WITH THE FEELS FOUNDATION:</span>
+                    Designed and developed a mobile e-commerce application using React Native. 
+                    Outlined and implemented a database transfer and sync using a js script.</p>
+        </div>
+
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            class="centered-element">
+                <p class="aboutp"><span style="font-weight: bold;">AI 4 ALL PROJECT MANAGER:</span>
+                   Aided students' education in machine learning models and basic python scripting.
+                </p>
+        </div>
+
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+        class="centered-element">
+            <p class="aboutp"><span style="font-weight: bold;">EXPOSED EXPERIENCE SEATTLE U:</span>
+               Designed, developed, and hosted education web simulation for over 100 students across a 2 day installation.
+            </p>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="Contact" class="footer-container">
+        <h1 class="footer-head" style="margin-top: 10rem;">CONTACT ME</h1>
+        <div class="separator"></div>
+
+        <div style="justify-content: center; text-align: center; margin-top: 5rem; height: 2rem;">
+            <a  href="https://www.linkedin.com/in/imran-islam-a486a7252">
+                <svg class="linkedinlogo" xmlns="http://www.w3.org/2000/svg" fill="#373737" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                </svg>
+            </a>
+        </div>
+
+        <button class="mybtn" style="margin-top: 5rem; margin-bottom: 5rem; width:80%" onclick="location.href='mailto:imran.colorado@gmail.com';">
+            <a class="mybtn-a">EMAIL ME</a>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/733c06764a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="js/typed.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+/* Mobile First
+------------------------------------------------------ */
+
+/* Html, Body  ------------------------------------------------------ */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html,body{
+    text-align: start;
+}
+
+/* Navbar/Header ----------------- */
+.maintop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px ;
+}
+.logo{
+    color: #373737;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 80px;
+    padding: 1%;
+}
+.logo::after {
+    content: "Imran Islam";
+    letter-spacing: -15px;
+    position: absolute;
+    font-size: 5rem;
+    top: 2rem;
+    left: 0;
+    opacity: 0.1;
+    transition: 1s;
+    left: 2rem;
+}
+.logo:hover::after {
+    top: 6rem;
+    letter-spacing: -9px;
+}
+
+/* Dropdown Menu ----------------- */
+.dropbtn {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid #909090;
+    padding: 16px;
+    width: 15rem;
+    font-size: 3rem;
+    margin-right: 2%;
+    margin-top: 0%;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 11%;
+    border-radius: 25px;
+    background-color: white;
+    width: 12rem;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none!important;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    color: #909090;
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: white;
+  }
+
+
+/* Main content 
+----------------- */
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px ;
+    align-items: center;
+}
+.describe{
+    width: 100%;
+    padding-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#typing {
+    font-size: 4rem ;
+    margin-bottom: 10px;   
+    margin-left: -3%;
+    white-space: normal;
+    overflow: hidden;
+    display: inline-block;
+    padding-right: 10px;
+}
+  
+h1.one{
+    font-size: 90px ;
+    margin-bottom: 10px;   
+}
+p{
+    text-align: justify;
+}
+.heroimg{
+    height: auto;
+    width: 90% ;
+    margin-left: 5%;
+    /*height: 400px;*/
+    border: 10px;
+    border-radius: 50%;
+    border-style: double;
+    border-color:#909090;
+}
+.subhead{
+  text-align: center;
+  margin: 10px ;
+  padding: 10px ;
+}
+
+/* Spacing -------------------------------------------- */
+.message{
+    margin-top: 0%;
+    width: 100%;
+    padding: 50px ;
+    align-items: center;
+    text-align: center;
+    color: #909090;
+}
+.message h1{
+    margin-left: 1rem;
+}
+.spacer{
+    width: 100%;
+    padding: 50px ;
+}
+  
+/* Section text -------------------------------------------- */
+.abouth{
+    font-size: 4rem;
+}
+.aboutm{
+    font-size: 3rem;
+}
+.aboutp{
+    font-size: 2rem;
+}
+
+
+/* ------------------------------------------------------ */
+.mybtn{
+    outline: none;
+    border-radius: 500px;
+    border: 1px solid #909090;
+    text-align: center;
+    padding: 2rem;
+    color: black;
+    background-color: white;
+    margin-top: 1rem;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    width: 100%;
+}
+
+.mybtn-a{
+    font-size: 2rem;
+    text-decoration: none!important;
+    color: #373737;
+}
+
+.mybt-a:hover{
+    color: #909090;
+}
+  
+.pimg{
+    border-radius: 28px;
+}
+
+/* Centering elements -------------------------------------------- */
+
+.centered-container{
+    height: 65rem;
+    align-content: center;
+    text-align: center;
+    margin-top: 5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.centered-element{
+    width: 100%;
+    margin-top: 6rem;
+    align-content: center;
+    text-align: center;
+}
+
+/* Footer -------------------------------------------- */
+.footer-container{
+    width: 100%;
+    height: 35rem;
+    align-content: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.footer-head{
+    background-color: #373737;
+    font-weight: 800;
+    padding: 4rem;
+    color: white;
+}
+.separator{
+    background-color: #373737;
+    padding: 0.5rem;
+}
+.linkedinlogo{
+    width: 64px;
+    height: 64px;
+}
+
+/* Hiding stuff 
+------------------------------------------------------ */
+  
+.hide-overflow {
+    overflow-x: hidden;
+}
+
+/* ------------------------------------------------------ */
+  
+  
+/* ------------------------------------------------------ */
+
+
+/* RESIZE HERE */
+/*------------------ */
+
+@media only screen and (min-width : 1280px) {
+
+    /*  Nav ------------------ */
+    .dropbtn {
+        border-radius: 25px;
+        padding: 16px;
+        width: 10rem;
+        font-size: 2rem;
+        margin-right: 2%;
+        margin-top: 15%;
+      }
+      
+      .dropdown-content {
+        left: -20%;
+        border-radius: 25px;
+        width: 12rem;
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+    /*  MAIN CONTENT ------------------ */
+    .content{
+        flex-direction: row;
+    }
+    .logo{
+        font-size: 60px;
+        padding: 1%;
+    }
+    .heroimg{
+        height: auto;
+        width: 47% ;
+        margin-left: 0%;
+    }
+    .describe{
+        width: 50%;
+        padding-left: 5%;
+    }
+    #typing {
+        font-size: 80px ;
+        margin-bottom: 10px;   
+        padding-right: 10px;
+    }
+
+    /* Spacing --------------*/
+    .message{
+        margin-top: -15%;
+        margin-left: -3%;
+        text-align: center;
+        width: 30%;
+    }
+    .message h1{
+        font-size: 1.5rem;
+    }
+    .message h1::after{
+        content: "V";
+        font-weight: 50;
+        position: absolute;
+        opacity: 0.0;
+        transition: 1s;
+        margin-left: -8%;
+        margin-top: 2%;
+    }
+    .message h1:hover::after{
+        opacity: 0.4;
+        margin-top: 5%;
+    }
+
+    /* about -----------------*/
+    .abouth{
+        font-size: 3rem;
+    }
+    .aboutm{
+        font-size: 2.5rem;
+    }
+    .aboutp{
+        font-size: 1rem;
+    }
+
+    /* Button --------------------------------------*/
+    .mybtn{
+        width: 80%;
+    }
+    .mybtn-a{
+        font-size: 1rem;
+    }
+    .leftshift{
+        margin-left: 10%;
+    }
+
+    /* Centered container ------------------------------------- */
+    .centered-container{
+        height: 35rem;
+    }
+
+    /* Footer ------------------------------------- */
+    .footer-container{
+        height: 25rem;
+    }
+    .linkedinlogo{
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+/* --------------------------------------------------  */
